@@ -1,3 +1,7 @@
+import 'package:project/zone.dart';
+import 'package:project/club.dart';
+
+
 class Terrain {
   String terrainId;
   String nom;
@@ -8,10 +12,13 @@ class Terrain {
   bool etat;
   String description;
   num tarif;
+  Zone zone;
+  Club club;
 
 
   Terrain({required this.terrainId ,required this.nom, 
   required this.adresse ,required this.attitude ,required this.longitude,
   required this.type, this.etat=true,required this.description,
-  required this.tarif});
+  required this.tarif, required this.zone, required this.club});
 }
+
